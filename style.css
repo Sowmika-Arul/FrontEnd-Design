@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: khaki;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+h1 {
+    margin: 0;
+    flex:1;
+    margin-left: 150px;
+}
+
+.login-button,
+.cart-symbol {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.login-button
+{
+background-color:rgb(78, 181, 78);
+border-radius: 12px;
+}
+
+.cart-symbol {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.login-button i {
+    margin-right: 5px;
+}
+
+.background-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background-container::before {
+    content: '';
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fish.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    -webkit-backdrop-filter: blur(5px); /* For older versions of Safari */
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    background-attachment: fixed;  /* Place the blurred background behind the content */
+}
+
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.navbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color:chocolate;
+}
+
+.navbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+footer {
+    background-color:khaki;
+    color:black;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 300px;
+    height: 370px; /* Set a fixed height for the product card */
+    background-color:#f1f1f1; /* Set background color to black */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 20px;
+    text-align: center; 
+}
+
+.product-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #e44d26;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+button {
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+

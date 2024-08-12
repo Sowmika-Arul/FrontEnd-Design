@@ -1,0 +1,23 @@
+ /* h3{ 
+    color:;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:50px;
+    height:10vh;
+} */
+
+p{
+    font-size:2rem;
+}
+ .animated-text {
+            font-size: 100px;
+            line-height: 100px;
+            margin-left:700px;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            background:url(sdc.png);
+            
+            background-position: 0 0;
+            animation: back 20s linear infinite;
+            position:absolute;
+            top:200px;
+          }
